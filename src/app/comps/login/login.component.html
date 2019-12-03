@@ -1,0 +1,15 @@
+<h1>Welcome to our ajax site</h1>
+
+
+<div class="relative container">
+    <form class="absolute">
+        username: <input [formControl]="username">
+        <br>
+        password:<input [formControl]="password">
+        <br>
+        <button type="button" (click)="logIn()">submit</button>
+    </form>
+
+    <div class="message relative">{{message}}</div>
+</div>
+<router-outlet></router-outlet>

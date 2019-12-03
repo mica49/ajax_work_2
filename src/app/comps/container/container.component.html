@@ -1,0 +1,31 @@
+<div class="flex container">
+    <div class="insideDiv relative" (click)="moveTo('posts')" >
+        <span>Last Posts</span>
+        <ul *ngFor = 'let post of posts'>
+            <li>{{post.title}}</li>
+        </ul>
+       <em>see more..</em>
+    </div>
+    <div class="insideDiv relative" (click)="moveTo('albums')">
+        <span>Last Albums</span>
+        <ul *ngFor = 'let album of albums'>
+            <li>{{album.title}}</li>
+        </ul>
+        <em>see more..</em>
+    </div>
+    <div class="insideDiv relative" (click)="moveTo('todos')">
+            <span>Last Todos</span>
+            <ul *ngFor = 'let todo of todos'>
+                <li>{{todo.title}}</li>
+            </ul>
+            <em>see more..</em>
+    </div>
+    <div class="insideDiv relative shadow">
+        <span>Your personnal stuff</span>
+        <ul>
+            <li class="bigger">Posts</li>
+            <li class="bigger">Albums</li>
+            <li class="bigger">Todos</li>
+        </ul>
+    </div>
+</div>
